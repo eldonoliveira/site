@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color:#FFFAF0 !important;
+}
+
+.navbar {
+	background-color:#DAA520 !important;
+	color:#ffffff !important;
+}
+
+.navbar-brand{
+	color:#fff !important;
+	font-weight:bold;
+}
+
+a.commandLink {
+	color:#ffffff !important;
+}
+
+.imgRedonda {
+	border-radius: 50%;
+	display: block;
+	margin: 10px auto;
+}
+
+.well {
+	margin-top: 20px;
+    background-color: #fff6e5 !important;
+    border-color: #daa520 !important;
+}
+
+H1 {
+	font-family: 'Rammetto One', cursive !important;
+	color:#DAA520 !important;
+}
+H2 {
+	font-family: 'Rammetto One', cursive !important;
+	color:#DAA520 !important;
+}
+H3 {
+	font-family: 'Rammetto One', cursive !important;
+	color:#DAA520 !important;
+}
+H4 {
+	font-family: 'Rammetto One', cursive !important;
+	color:#DAA520 !important;
+}
+H5 {
+	font-family: 'Rammetto One', cursive !important;
+	color:#DAA520 !important;
+}

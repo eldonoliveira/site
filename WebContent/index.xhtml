@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="#{navigationPage.menu}">
+	<ui:define name="conteudo">
+		<b:carousel style="margin-top:50px">
+			<b:carouselItem>
+				<img src="http://via.placeholder.com/1900x780?text=img1" />
+			</b:carouselItem>
+			<b:carouselItem>
+				<img src="http://via.placeholder.com/1900x780?text=img2" />
+			</b:carouselItem>
+			<b:carouselItem>
+				<img src="http://via.placeholder.com/1900x780?text=img3" />
+			</b:carouselItem>
+		</b:carousel>
+		<b:well>
+			<h3>Comos podemos ajudar?</h3>
+			<b:row>
+				<b:column col-xs="12" col-sm="6" col-md="3">
+					<b:image value="http://via.placeholder.com/200x200"
+						styleClass="imgRedonda" />
+					<h5 align="center">Suas contas em dia?</h5>
+					<p align="center">Coloque suas contas em dia.</p>
+				</b:column>
+				<b:column col-xs="12" col-sm="6" col-md="3">
+					<b:image value="http://via.placeholder.com/200x200"
+						styleClass="imgRedonda" />
+					<h5 align="center">A viagem dos sonhos?</h5>
+					<p align="center">Desfrute da viagem que sempre sonhou.</p>
+				</b:column>
+				<b:column col-xs="12" col-sm="6" col-md="3">
+					<b:image value="http://via.placeholder.com/200x200"
+						styleClass="imgRedonda" />
+					<h5 align="center">Um projeto pessoal?</h5>
+					<p align="center">Tire seus planos do papel.</p>
+				</b:column>
+				<b:column col-xs="12" col-sm="6" col-md="3">
+					<b:image value="http://via.placeholder.com/200x200"
+						styleClass="imgRedonda" />
+					<h5 align="center">Um momento especial?</h5>
+					<p align="center">Conte conosco nesses momentos.</p>
+				</b:column>
+			</b:row>
+		</b:well>
+	</ui:define>
+</ui:composition>
+</html>

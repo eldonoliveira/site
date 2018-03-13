@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<link href="#{navigationPage.style}" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Rammetto+One" rel="stylesheet" />
+	<title>#{navigationPage.menu}</title>
+</h:head>
+<h:body>
+	<b:container fluid="true">
+		<b:row>
+			<b:form>
+				<b:navBar brand="Zelo Call Center" brandHref=""	fixed="top">
+					<b:navbarLinks pull="right">
+						<b:navCommandLink value="Home" icon="home" icon-align="left"
+							action="#{navigationPage.navPageIndex()}" />
+						<b:navCommandLink value="Produtos" icon="usd" icon-align="left"
+							action="#{navigationPage.navPageProdutos()}" />
+						<b:navCommandLink value="Contato" icon="envelope" icon-align="left"
+							action="#{navigationPage.navPageContato()}" />
+						<b:navCommandLink value="Localização" icon="map-marker" icon-align="left"
+							action="#{navigationPage.navPageLocalizacao()}" />
+					</b:navbarLinks>
+				</b:navBar>
+			</b:form>
+		</b:row>
+	</b:container>
+	<b:container>
+		<b:row>
+			<ui:insert name="conteudo"></ui:insert>
+		</b:row>
+	</b:container>
+</h:body>
+</html>

@@ -1,0 +1,22 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces">
+
+	<url-mapping id="index">
+		<pattern value="/" />
+		<view-id value="/faces/index.xhtml" />
+	</url-mapping>
+	<url-mapping id="produtos">
+		<pattern value="/produtos.ZeloCallCenter" />
+		<view-id value="/faces/produtos.xhtml" />
+	</url-mapping>
+	<url-mapping id="localizacao">
+		<pattern value="/localizacao.ZeloCallCenter" />
+		<view-id value="/faces/localizacao.xhtml" />
+	</url-mapping>
+	<url-mapping id="contato">
+		<pattern value="/contato.ZeloCallCenter" />
+		<view-id value="/faces/contato.xhtml" />
+	</url-mapping>
+	
+</pretty-config>

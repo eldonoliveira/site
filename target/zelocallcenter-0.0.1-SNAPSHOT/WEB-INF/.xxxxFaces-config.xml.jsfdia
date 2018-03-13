@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#index.xhtml" PATH="/index.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#index.xhtml:0" NAME="item"
+   PATH="/index.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="dashboard1::#dashboard.xhtml?faces-redirect=true" NAME="output"
+    PATH="/dashboard.xhtml?faces-redirect=true"
+    TARGET="rules:#dashboard.xhtml?faces-redirect=true"
+    TITLE="dashboard1" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#dashboard.xhtml?faces-redirect=true"
+  PATH="/dashboard.xhtml?faces-redirect=true" SHAPE="256,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#dashboard.xhtml" PATH="/dashboard.xhtml"
+  SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#dashboard.xhtml:0" NAME="item"
+   PATH="/dashboard.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="index::#index.xhtml?faces-redirect=true"
+    NAME="output" PATH="/index.xhtml?faces-redirect=true"
+    TARGET="rules:#index.xhtml?faces-redirect=true" TITLE="index" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#index.xhtml?faces-redirect=true"
+  PATH="/index.xhtml?faces-redirect=true" SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
