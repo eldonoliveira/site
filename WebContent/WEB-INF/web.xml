@@ -12,11 +12,11 @@
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-  <servlet-mapping>
-    <servlet-name>Faces Servlet</servlet-name>
-    <url-pattern>/faces/*</url-pattern>
-    <url-pattern>*.xhtml</url-pattern>
-  </servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>/faces/*</url-pattern>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
 	<filter>
 		<filter-name>Pretty Filter</filter-name>
 		<filter-class>com.ocpsoft.pretty.PrettyFilter</filter-class>
@@ -30,6 +30,11 @@
 	</filter-mapping>
 	<context-param>
 		<param-name>com.ocpsoft.pretty.DEVELOPMENT</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<!-- Activates the waitcursor and the double-click protection -->
+	<context-param>
+		<param-name>net.bootsfaces.blockUI</param-name>
 		<param-value>true</param-value>
 	</context-param>
 </web-app>

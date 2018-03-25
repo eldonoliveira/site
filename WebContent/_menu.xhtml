@@ -7,23 +7,38 @@
 
 <h:head>
 	<link href="#{navigationPage.style}" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Rammetto+One" rel="stylesheet" />
-	<title>#{navigationPage.menu}</title>
+	<link
+		href="https://fonts.googleapis.com/css?family=Raleway|Rammetto+One|Kanit"
+		rel="stylesheet" />
+	<link rel="icon" href="img/favicon.ico" />
+	<title>#{navigationPage.title}</title>
 </h:head>
 <h:body>
+	<script>
+	<!-- $.blockUI.defaults.overlayCSS.opacity=10; -->
+	$.blockUI.defaults.message='<h3>Por favor, aguarde...<b:spinner name="refresh" size="1x" /></h3>';
+	</script>
+
+	<b:growl id="mensagens" autoUpdate="true" />
 	<b:container fluid="true">
 		<b:row>
 			<b:form>
-				<b:navBar brand="Zelo Call Center" brandHref=""	fixed="top">
+				<b:navBar brand="Zelo Call Center" brandHref="" fixed="top">
 					<b:navbarLinks pull="right">
+						<b:navCommandLink value="(51) 98051-3045" icon="phone"
+							icon-align="left" />
+						<b:navCommandLink value="(51) 3105-2284" icon="phone-alt"
+							icon-align="left" />
 						<b:navCommandLink value="Home" icon="home" icon-align="left"
 							action="#{navigationPage.navPageIndex()}" />
+						<b:navCommandLink value="Serviços" icon="th-list"
+							icon-align="left" action="#{navigationPage.navPageServicos()}" />
 						<b:navCommandLink value="Produtos" icon="usd" icon-align="left"
 							action="#{navigationPage.navPageProdutos()}" />
-						<b:navCommandLink value="Contato" icon="envelope" icon-align="left"
-							action="#{navigationPage.navPageContato()}" />
-						<b:navCommandLink value="Localização" icon="map-marker" icon-align="left"
-							action="#{navigationPage.navPageLocalizacao()}" />
+						<b:navCommandLink value="Contato" icon="envelope"
+							icon-align="left" action="#{navigationPage.navPageContato()}" />
+						<b:navCommandLink value="Localização" icon="map-marker"
+							icon-align="left" action="#{navigationPage.navPageLocalizacao()}" />
 					</b:navbarLinks>
 				</b:navBar>
 			</b:form>

@@ -6,16 +6,20 @@
 		<pattern value="/" />
 		<view-id value="/faces/index.xhtml" />
 	</url-mapping>
+	<url-mapping id="servicos">
+		<pattern value="/s.zelocallcenter" />
+		<view-id value="/faces/servicos.xhtml" />
+	</url-mapping>
 	<url-mapping id="produtos">
-		<pattern value="/produtos.ZeloCallCenter" />
+		<pattern value="/p.zelocallcenter" />
 		<view-id value="/faces/produtos.xhtml" />
 	</url-mapping>
 	<url-mapping id="localizacao">
-		<pattern value="/localizacao.ZeloCallCenter" />
+		<pattern value="/l.zelocallcenter" />
 		<view-id value="/faces/localizacao.xhtml" />
 	</url-mapping>
 	<url-mapping id="contato">
-		<pattern value="/contato.ZeloCallCenter" />
+		<pattern value="/c.zelocallcenter" />
 		<view-id value="/faces/contato.xhtml" />
 	</url-mapping>
 	

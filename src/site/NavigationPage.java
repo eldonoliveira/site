@@ -4,12 +4,18 @@ import javax.faces.bean.ManagedBean;
 
 @ManagedBean
 public class NavigationPage {
+	private String title = "..:: Zelo Call Center ::..";
 	private String menu = "_menu.xhtml";
 	private String style = "css/zelocallcenter.css";
 	
 	public String navPageIndex() {
 		System.out.println("[PAGE] index");
 		return "pretty:index";
+	}
+
+	public String navPageServicos() {
+		System.out.println("[PAGE] serviços");
+		return "pretty:servicos";
 	}
 
 	public String navPageProdutos() {
@@ -41,6 +47,14 @@ public class NavigationPage {
 
 	public void setStyle(String style) {
 		this.style = style;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 }

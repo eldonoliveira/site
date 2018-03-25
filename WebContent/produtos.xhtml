@@ -7,10 +7,51 @@
 
 <ui:composition template="#{navigationPage.menu}">
 	<ui:define name="conteudo">
-		<b:well style="margin-top:50px">
-		<h3>Temos o produto certo para sua necessidade!</h3>
-		<b:panel collapsible="false" title="Militares"></b:panel>
-		<b:panel collapsible="false" title="Aposentados e Pensionistas"></b:panel>
+		<b:well style="margin-top:70px">
+			<h3>Temos o produto certo para sua necessidade</h3>
+			<h3>
+				ZELO CRED <small>Funcionário Público Federal - SIAPE</small>
+			</h3>
+			<b:panelGrid columns="1">
+				<img src="img/PRD-siape-texto.jpg" width="100%" />
+			</b:panelGrid>
+			<h3>
+				ZELO CRED <small>Aposentados e Pensionistas - INSS</small>
+			</h3>
+			<b:panelGrid columns="1">
+				<img src="img/PRD-inss-texto.jpg" width="100%" />
+			</b:panelGrid>
+			<h3>
+				ZELO NET <small>Planos</small>
+			</h3>
+			<b:panelGrid columns="1">
+				<b:row>
+					<b:column col-xs="12" col-sm="6" col-md="3">
+						<b:image value="img/NET-combo.png" height="200" width="200"
+							styleClass="imgRedonda" />
+						<h5 align="center">Combo</h5>
+						<p align="center"></p>
+					</b:column>
+					<b:column col-xs="12" col-sm="6" col-md="3">
+						<b:image value="img/NET-internet.jpg" height="200" width="200"
+							styleClass="imgRedonda" />
+						<h5 align="center">Internet</h5>
+						<p align="center"></p>
+					</b:column>
+					<b:column col-xs="12" col-sm="6" col-md="3">
+						<b:image value="img/NET-tv.png" height="200" width="200"
+							styleClass="imgRedonda" />
+						<h5 align="center">TV</h5>
+						<p align="center"></p>
+					</b:column>
+					<b:column col-xs="12" col-sm="6" col-md="3">
+						<b:image value="img/NET-fixo.png" height="200" width="200"
+							styleClass="imgRedonda" />
+						<h5 align="center">Fixo</h5>
+						<p align="center"></p>
+					</b:column>
+				</b:row>
+			</b:panelGrid>
 		</b:well>
 	</ui:define>
 </ui:composition>

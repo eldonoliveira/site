@@ -4,11 +4,48 @@
 	xmlns:b="http://bootsfaces.net/ui"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
-
 <ui:composition template="#{navigationPage.menu}">
 	<ui:define name="conteudo">
-		<b:well style="margin-top:50px">
-			<h3>Contato</h3>
+		<b:well style="margin-top:70px">
+			<h3>Contatos</h3>
+			<b:panelGrid columns="2">
+				<b:panel title="Telefones/E-mail" collapsible="false">
+					<b:icon name="phone"> (51) 98051-3045 </b:icon>
+					<br />
+					<br />
+					<b:icon name="phone-alt"> (51)  3105-2284 </b:icon>
+					<br />
+					<br />
+					<b:icon name="envelope"> contato@zelocallcenter.com.br</b:icon>
+				</b:panel>
+				<b:panel title="Mensagem" collapsible="false">
+					<b:form id="formContato">
+						<b:inputText id="nomeCliente" placeholder="Nome (obrigatório)" 
+							value="#{formularioContato.formDTO.formNome}" required="true" requiredMessage="Preencha o campo Nome." />
+						<b:inputText id="nroTelefone" placeholder="Telefone (obrigatório)" mask="(99) 9999-99999"
+							value="#{formularioContato.formDTO.formTelefone}" required="true"
+							requiredMessage="Preencha o campo Telefone." />
+						<b:inputText id="nroCpf" placeholder="CPF (opcional)" 
+							value="#{formularioContato.formDTO.formCPF}"
+							required="false" mask="999.999.999-99"/>
+						<b:selectOneMenu value="#{formularioContato.formDTO.formAssunto}" 
+										required="true" 
+										requiredMessage="Preencha o campo Assunto"
+										id="assuntoContato">
+							<f:selectItem itemLabel="(Selecione um assunto)" itemValue="" />
+							<f:selectItem itemLabel="Consignado - INSS" itemValue="1" />
+							<f:selectItem itemLabel="Consignado - SIAPE" itemValue="2" />
+							<f:selectItem itemLabel="Plano NET" itemValue="3" />
+						</b:selectOneMenu>
+						<b:inputTextarea id="textoMensagem" required="true"
+							requiredMessage="Preencha o campo Mensagem."
+							placeholder="Mensagem (obrigatório)" 
+							value="#{formularioContato.formDTO.formMensagem}"/>
+						<b:commandButton icon="send" icon-align="left" value="Enviar" ajax="true"
+							look="primary" span="6" offset="3" onclick="ajax:formularioContato.enviarFormulario()" update="formContato :mensagens" />
+					</b:form>
+				</b:panel>
+			</b:panelGrid>
 		</b:well>
 	</ui:define>
 </ui:composition>

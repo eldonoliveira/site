@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="#{navigationPage.menu}">
+	<ui:define name="conteudo">
+		<b:well style="margin-top:70px">
+			<h3>Serviços completos para sua necessidade</h3>
+			<b:panelGrid columns="2">
+				<b:panel title="Crédito Consignado - NOVO" collapsible="false">
+					<p>Modalidade de empréstimo com desconto em folha, onde o valor
+						é liberado conforme a sua margem disponível.</p>
+				</b:panel>
+				<b:panel title="Crédito Consignado - Refinanciamento"
+					collapsible="false">
+					<p>Modalidade de empréstimo com desconto em folha, onde a
+						Instituição Financeira quita o consignado que você possui e libera
+						um valor de troco conforme a margem disponível.</p>
+				</b:panel>
+				<b:panel title="Crédito Consignado - Portabilidade"
+					collapsible="false">
+					<p>Modalidade de empréstimo com desconto em folha, onde uma Instituição Financeira compra sua dívida junto a outras Instituições e libera um valor de troco conforme a margem disponível.</p>
+				</b:panel>
+				<b:panel title="NET - Planos" collapsible="false">
+					<p>Aquisição de planos combos ou individuais de TV, Internet, Fixo e Celular.</p>
+				</b:panel>
+			</b:panelGrid>
+		</b:well>
+	</ui:define>
+</ui:composition>
+</html>
