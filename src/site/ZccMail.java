@@ -26,29 +26,30 @@ public class ZccMail {
 
 			MimeMessage msg = new MimeMessage(session);
 			msg.setFrom(new InternetAddress("site@zelocallcenter.com.br")); // Remetente
+			
+			/* DEBUG - do envio de e-mail */
+			session.setDebug(false);
 
-			session.setDebug(true);
-
-			System.out.println(">> Host");
+//			System.out.println(">> Host");
 			p.put("mail.smtps.host", "server28.integrator.com.br");
 
-			System.out.println(">> Auth");
+//			System.out.println(">> Auth");
 			p.put("mail.smtps.auth", "true");
 
-			System.out.println(">> Port");
+//			System.out.println(">> Port");
 			p.put("mail.smtps.port", "465");
 
-			System.out.println(">> SMTP");
+//			System.out.println(">> SMTP");
 			Transport t = session.getTransport("smtp");
 
-			System.out.println(">> Connect");
+//			System.out.println(">> Connect");
 			t.connect("mail.zelocallcenter.com.br", 587, "site@zelocallcenter.com.br", "ZCCenter@1201");
 
-			System.out.println(">> SendMessage");
+//			System.out.println(">> SendMessage");
 			msg.setSubject("Contato via Site");// Assunto
 			msg.setText(formDTO.getMensagem(), "utf-8", "html");
 			t.sendMessage(msg, new Address[] { new InternetAddress("eldoneso@gmail.com"),
-											   new InternetAddress("suyane.pereira84@gmail.com")});
+											   new InternetAddress("suyani.pereira@zelocallcenter.com.br")});
 		} catch (AddressException e) {
 			e.printStackTrace();
 		} catch (MessagingException e) {

@@ -9,27 +9,27 @@ public class NavigationPage {
 	private String style = "css/zelocallcenter.css";
 	
 	public String navPageIndex() {
-		System.out.println("[PAGE] index");
+//		System.out.println("[PAGE] index");
 		return "pretty:index";
 	}
 
 	public String navPageServicos() {
-		System.out.println("[PAGE] serviços");
+//		System.out.println("[PAGE] serviços");
 		return "pretty:servicos";
 	}
 
 	public String navPageProdutos() {
-		System.out.println("[PAGE] produtos");
+//		System.out.println("[PAGE] produtos");
 		return "pretty:produtos";
 	}
 
 	public String navPageLocalizacao() {
-		System.out.println("[PAGE] localizacao");
+//		System.out.println("[PAGE] localizacao");
 		return "pretty:localizacao";
 	}
 
 	public String navPageContato() {
-		System.out.println("[PAGE] contato");
+//		System.out.println("[PAGE] contato");
 		return "pretty:contato";
 	}
 

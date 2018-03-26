@@ -39,15 +39,15 @@ public class FormularioContato {
 
 		formDTO.setMensagem(msgFormatada);
 
-		System.out.println("[FORM-NOME] - " + formDTO.getFormNome());
-		System.out.println("[FORM-FONE] - " + formDTO.getFormTelefone());
-		System.out.println("[FORM-CPF ] - " + formDTO.getFormCPF());
-		System.out.println("[FORM-ASSU] - " + formDTO.getFormAssunto());
-		System.out.println("[FORM-MENS] - " + formDTO.getFormMensagem());
+//		System.out.println("[FORM-NOME] - " + formDTO.getFormNome());
+//		System.out.println("[FORM-FONE] - " + formDTO.getFormTelefone());
+//		System.out.println("[FORM-CPF ] - " + formDTO.getFormCPF());
+//		System.out.println("[FORM-ASSU] - " + formDTO.getFormAssunto());
+//		System.out.println("[FORM-MENS] - " + formDTO.getFormMensagem());
 
 		zccMail.enviarEmailZcc(formDTO);
 
-		System.out.println("[FORM-SEND] - Mensagem enviada!!!");
+//		System.out.println("[FORM-SEND] - Mensagem enviada!!!");
 		FacesMessages.info("Mensagem enviada com sucesso!", "");
 		formDTO = new ZccMailDTO();
 	}
